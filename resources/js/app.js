@@ -3,17 +3,63 @@ const menuToggle = document.getElementById('menuToggle');
 const navbarMenu = document.getElementById('navbarMenu');
 
 if (menuToggle && navbarMenu) {
-    menuToggle.addEventListener('click', () => {
+    menuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
         navbarMenu.classList.toggle('active');
+        // Toggle hamburger icon
+        const icon = menuToggle.querySelector('i');
+        if (icon) {
+            if (navbarMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        }
+    });
+    
+    // Close menu when clicking on a link
+    const navLinks = navbarMenu.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navbarMenu.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
     });
 }
 
 // Close menu when clicking outside
 document.addEventListener('click', (e) => {
-    if (navbarMenu && !navbarMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-        navbarMenu.classList.remove('active');
+    if (navbarMenu && menuToggle) {
+        if (!navbarMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+            navbarMenu.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        }
     }
 });
+
+// Prevent body scroll when menu is open on mobile
+if (window.innerWidth <= 768) {
+    if (navbarMenu) {
+        const observer = new MutationObserver(() => {
+            if (navbarMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+        observer.observe(navbarMenu, { attributes: true, attributeFilter: ['class'] });
+    }
+}
 
 // Statistics Counter Animation
 function animateCounter(element, target, duration = 2000) {

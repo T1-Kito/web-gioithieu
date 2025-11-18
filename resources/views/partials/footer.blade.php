@@ -1,45 +1,3 @@
-<section class="company-info-banner">
-    <div class="container">
-        <div class="company-info-card">
-            <div class="company-info-header">
-                <div class="company-info-logo">
-                    <img src="{{ asset('logo.png') }}" alt="Vigilance logo">
-                    <div>
-                        <p class="logo-badge">Chi nhánh 1</p>
-                        <h3>CÔNG TY CỔ PHẦN VIGILANCE VIỆT NAM</h3>
-                    </div>
-                </div>
-                <span class="tech-label">Cung cấp giải pháp công nghệ tích hợp</span>
-            </div>
-            <div class="company-info-body">
-                <ul class="info-list">
-                    <li><i class="fas fa-check-circle"></i>Máy chấm công vân tay &amp; khuôn mặt</li>
-                    <li><i class="fas fa-check-circle"></i>Khóa cửa thông minh – Kiểm soát ra vào</li>
-                    <li><i class="fas fa-check-circle"></i>Phần mềm nhân sự – Tiền lương</li>
-                </ul>
-                <ul class="info-list">
-                    <li><i class="fas fa-check-circle"></i>Giải pháp giám sát camera</li>
-                    <li><i class="fas fa-check-circle"></i>Thiết bị mạng &amp; Hạ tầng CNTT</li>
-                    <li><i class="fas fa-check-circle"></i>Bảo trì – Bảo dưỡng hệ thống định kỳ</li>
-                </ul>
-            </div>
-            <div class="company-info-footer">
-                <div class="contact-chip">
-                    <i class="fas fa-map-marker-alt"></i>
-                    ĐC: Đường số 14, KDC Him Lam, Phường Tân Hưng, TP.HCM
-                </div>
-                <div class="contact-chip">
-                    <i class="fas fa-globe"></i>
-                    www.vigilancevn.com.vn
-                </div>
-                <a class="contact-chip hotline" href="https://zalo.me/0982751075" target="_blank" rel="noopener">
-                    <i class="fas fa-phone"></i>
-                    0982 751 075
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
@@ -52,17 +10,17 @@
                     Vigilance Việt Nam cung cấp giải pháp thiết bị chấm công, kiểm soát ra vào và dịch vụ tư vấn giúp doanh nghiệp vận hành hiệu quả, an toàn.
                 </p>
                 <div class="social-icons">
-                    <a href="#" class="social-icon" aria-label="Facebook">
+                    <a href="https://www.facebook.com/vigilancevn" target="_blank" rel="noopener" class="social-icon social-facebook" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="social-icon" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
+                    <a href="https://www.instagram.com/vigilancevn" target="_blank" rel="noopener" class="social-icon social-instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="social-icon" aria-label="YouTube">
+                    <a href="https://zalo.me/0982751075" target="_blank" rel="noopener" class="social-icon social-zalo" aria-label="Zalo">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@vigilancevn" target="_blank" rel="noopener" class="social-icon social-youtube" aria-label="YouTube">
                         <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="#" class="social-icon" aria-label="TikTok">
-                        <i class="fab fa-tiktok"></i>
                     </a>
                 </div>
             </div>

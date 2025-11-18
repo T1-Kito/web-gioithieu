@@ -40,7 +40,7 @@
                 </a>
                 <a href="https://zalo.me/0982751075" target="_blank" rel="noopener" class="btn btn-small btn-zalo">
                     <i class="fas fa-comments"></i>
-                    Liên hệ nhanh
+                    <span>Liên hệ nhanh</span>
                 </a>
             </div>
         </div>
