@@ -25,7 +25,7 @@
                 </div>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
                 <div class="hero-slide active">
-                    <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1920&q=80');"></div>
+                    <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1920&amp;q=80');"></div>
                     <div class="hero-overlay"></div>
                     <div class="container">
                         <div class="hero-content">
@@ -78,52 +78,43 @@
         </div>
     </section>
 
-    <!-- Business Highlight Section -->
+    <!-- About Company Section -->
     <section class="business-highlight-section">
         <div class="container business-highlight-grid">
-            <div class="business-highlight-image">
-                <img src="<?php echo e(asset('images/business-main.png')); ?>" alt="Giải pháp Vigilance">
+            <div class="business-media-stack">
+                <div class="media-blob"></div>
+                <div class="media-card primary">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&amp;q=80" alt="Hệ thống điều hành kiểm soát ra vào thông minh">
+                </div>
+                <div class="media-card secondary">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&amp;q=80" alt="Thiết bị chấm công công nghệ cao">
+                </div>
+                <div class="media-mini-card">
+                    <span>Advanced Analytic</span>
+                    <p>Growth, focus & analysis.</p>
+                </div>
             </div>
             <div class="business-highlight-content">
-                <span class="section-tag">Our Benefits</span>
-                <h2 class="business-highlight-title">Giải pháp tối ưu cho doanh nghiệp của bạn</h2>
-                <p class="business-highlight-text">
-                    Chúng tôi mang đến hệ sinh thái thiết bị chấm công và kiểm soát ra vào toàn diện, giúp doanh nghiệp quản lý nhân sự hiệu quả và an toàn hơn bao giờ hết.
-                </p>
-                <div class="business-highlight-list">
-                    <div class="business-highlight-item">
-                        <div class="business-icon">
-                            <img src="<?php echo e(asset('images/icon-01.jpg')); ?>" alt="Cam kết hiệu quả">
-                        </div>
-                        <div>
-                            <h3>Cam kết hiệu quả</h3>
-                            <p>Thiết bị hiện đại giúp quản lý minh bạch, chính xác và tiết kiệm thời gian.</p>
-                        </div>
-                    </div>
-                    <div class="business-highlight-item">
-                        <div class="business-icon">
-                            <img src="<?php echo e(asset('images/icon-02.jpg')); ?>" alt="Công nghệ tiên tiến">
-                        </div>
-                        <div>
-                            <h3>Ứng dụng công nghệ tiên tiến</h3>
-                            <p>Nhận diện khuôn mặt, vân tay, thẻ từ – đáp ứng mọi quy mô doanh nghiệp.</p>
-                        </div>
-                    </div>
-                    <div class="business-highlight-item">
-                        <div class="business-icon">
-                            <img src="<?php echo e(asset('images/icon-03.jpg')); ?>" alt="Hỗ trợ tận tâm">
-                        </div>
-                        <div>
-                            <h3>Hỗ trợ kỹ thuật tận tâm</h3>
-                            <p>Tư vấn, lắp đặt, bảo hành tận nơi – đồng hành cùng khách hàng suốt quá trình sử dụng.</p>
-                        </div>
-                    </div>
+                <span class="section-tag">About Company</span>
+                <h2 class="business-highlight-title">Giải pháp chấm công &amp; kiểm soát ra vào cho doanh nghiệp của bạn</h2>
+                <div class="business-highlight-text">
+                    <p>
+                        Nhu cầu về quản lý nhân sự và an ninh của doanh nghiệp không ngừng thay đổi, vì thế Vigilance Việt Nam luôn tiên phong cập nhật công nghệ mới và cải tiến dịch vụ.
+                    </p>
+                    <p>
+                        Chúng tôi không ngừng mở rộng sản phẩm, nâng cấp hệ thống và đào tạo đội ngũ kỹ thuật chuyên sâu nhằm mang đến giải pháp chính xác – hiệu quả – dễ sử dụng.
+                    </p>
+                    <p>
+                        Chúng tôi đồng hành cùng khách hàng ở mọi quy mô — từ doanh nghiệp vừa và nhỏ đến tập đoàn lớn, không chỉ là nhà cung cấp thiết bị, mà còn là đối tác tư vấn giải pháp và hỗ trợ kỹ thuật trọn đời.
+                    </p>
+                </div>
+                <div class="business-cta">
+                    <a href="<?php echo e(route('about')); ?>" class="btn btn-primary">EXPLORE NOW</a>
                 </div>
             </div>
         </div>
     </section>
 
-  
     <!-- Case Studies Section -->
     <!-- (Removed as requested) -->
 
@@ -151,59 +142,83 @@
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section class="blog-section">
+    <!-- Benefits Inline Section -->
+    <section class="benefits-inline-section">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">OUR BLOG</span>
-                <h2 class="section-title">Read Our Latest Insights</h2>
-                <p class="section-description">
-                    We help you see the world differently, discover opportunities you may never have imagined 
-                    and achieve results that bridge what is with what can be.
-                </p>
+            <div class="benefits-inline-media">
+                <img src="<?php echo e(asset('images/anhghep.jpg')); ?>" alt="Nhân sự vận hành hệ thống Vigilance">
             </div>
-            <div class="blog-grid">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&q=80" alt="Blog 1">
-                        <span class="blog-tag">BLOG</span>
-                    </div>
-                    <div class="blog-content">
-                        <h3 class="blog-title">Digital Transformation Roadmap: Enablers</h3>
-                        <span class="blog-date">04/03/2023</span>
-                        <a href="<?php echo e(route('blogs')); ?>" class="blog-link">VIEW MORE</a>
-                    </div>
-                </article>
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&q=80" alt="Blog 2">
-                        <span class="blog-tag">BLOG</span>
-                    </div>
-                    <div class="blog-content">
-                        <h3 class="blog-title">The Future of Retail: Asia's Ecosystems</h3>
-                        <span class="blog-date">04/03/2023</span>
-                        <a href="<?php echo e(route('blogs')); ?>" class="blog-link">VIEW MORE</a>
-                    </div>
-                </article>
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80" alt="Blog 3">
-                        <span class="blog-tag">BLOG</span>
-                    </div>
-                    <div class="blog-content">
-                        <h3 class="blog-title">Contactless Payments' Time Has Come</h3>
-                        <span class="blog-date">04/03/2023</span>
-                        <a href="<?php echo e(route('blogs')); ?>" class="blog-link">VIEW MORE</a>
-                    </div>
-                </article>
+            <div class="benefits-inline-header">
+                <span class="section-tag">OUR BENEFITS</span>
             </div>
-            <div class="section-footer">
-                <a href="<?php echo e(route('blogs')); ?>" class="btn btn-primary">VIEW ALL</a>
+            <div class="benefits-inline-grid">
+                <div class="benefits-inline-card">
+                    <div class="benefit-inline-icon">
+                        <img src="<?php echo e(asset('images/icon-01.jpg')); ?>" alt="Cam kết hiệu quả">
+                    </div>
+                    <h3>Cam kết hiệu quả</h3>
+                    <p>Thiết bị hiện đại giúp quản lý minh bạch, chính xác và tiết kiệm thời gian.</p>
+                </div>
+                <div class="benefits-inline-card">
+                    <div class="benefit-inline-icon">
+                        <img src="<?php echo e(asset('images/icon-02.jpg')); ?>" alt="Công nghệ tiên tiến">
+                    </div>
+                    <h3>Ứng dụng công nghệ tiên tiến</h3>
+                    <p>Nhận diện khuôn mặt, vân tay, thẻ từ – đáp ứng mọi quy mô doanh nghiệp.</p>
+                </div>
+                <div class="benefits-inline-card">
+                    <div class="benefit-inline-icon">
+                        <img src="<?php echo e(asset('images/icon-03.jpg')); ?>" alt="Hỗ trợ kỹ thuật">
+                    </div>
+                    <h3>Hỗ trợ kỹ thuật tận tâm</h3>
+                    <p>Đội ngũ kỹ sư túc trực 24/7, đồng hành trong suốt vòng đời dự án.</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Products Journey Section -->
+    <section class="products-journey-section">
+        <div class="container">
+            <div class="products-journey-header">
+                <h2 class="products-journey-title">Bắt đầu hành trình sử dụng giải pháp của bạn</h2>
+                <p class="products-journey-subtitle">Nhận trợ giúp bạn cần để chuyển sang hệ thống quản lý hiện đại một cách đơn giản và bắt đầu tận hưởng mọi tính năng mà giải pháp của chúng tôi mang lại.</p>
+            </div>
+            <div class="products-journey-grid">
+                <div class="products-journey-card">
+                    <div class="products-journey-image">
+                        <img src="<?php echo e(asset('images/maychamcong.webp')); ?>" alt="Máy chấm công">
+                    </div>
+                    <div class="products-journey-overlay">
+                        <h3 class="products-journey-card-title">Máy chấm công</h3>
+                        <p class="products-journey-card-subtitle">Hệ thống chấm công hiện đại</p>
+                        <a href="#" class="products-journey-link">Tìm hiểu thêm ></a>
+                    </div>
+                </div>
+                <div class="products-journey-card">
+                    <div class="products-journey-image">
+                        <img src="<?php echo e(asset('images/congphanlang.jpeg')); ?>" alt="Cổng phân làng">
+                    </div>
+                    <div class="products-journey-overlay">
+                        <h3 class="products-journey-card-title">Cổng phân làng</h3>
+                        <p class="products-journey-card-subtitle">Giải pháp kiểm soát ra vào thông minh</p>
+                        <a href="#" class="products-journey-link">Tìm hiểu thêm ></a>
+                    </div>
+                </div>
+                <div class="products-journey-card">
+                    <div class="products-journey-image">
+                        <img src="<?php echo e(asset('images/khoa.jpg')); ?>" alt="Khóa ZKTeko">
+                    </div>
+                    <div class="products-journey-overlay">
+                        <h3 class="products-journey-card-title">Khóa ZKTeko</h3>
+                        <p class="products-journey-card-subtitle">Hệ thống khóa thông minh</p>
+                        <a href="#" class="products-journey-link">Tìm hiểu thêm ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section (removed as requested) -->
 <?php $__env->stopSection(); ?>
-
-
-
 <?php echo $__env->make('layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\xampp\web-gioithieu\resources\views/home.blade.php ENDPATH**/ ?>

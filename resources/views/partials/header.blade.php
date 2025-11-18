@@ -19,8 +19,8 @@
                 <li class="nav-item {{ request()->routeIs('services') ? 'active' : '' }}">
                     <a href="{{ route('services') }}">Dịch vụ</a>
                 </li>
-                <li class="nav-item {{ request()->routeIs('products') ? 'active' : '' }}">
-                    <a href="{{ route('products') }}">Sản phẩm</a>
+                <li class="nav-item">
+                    <a href="https://vigilancevn.com.vn/" target="_blank" rel="noopener">Sản phẩm</a>
                 </li>
                 <li class="nav-item {{ request()->routeIs('blogs') ? 'active' : '' }}">
                     <a href="{{ route('blogs') }}">Blog</a>
@@ -38,9 +38,9 @@
                     <i class="fas fa-envelope"></i>
                     contact@vigilance.vn
                 </a>
-                <a href="tel:+84888888888" class="btn btn-small btn-primary">
-                    <i class="fas fa-phone"></i>
-                    0888 888 888
+                <a href="https://zalo.me/0982751075" target="_blank" rel="noopener" class="btn btn-small btn-zalo">
+                    <i class="fas fa-comments"></i>
+                    Liên hệ nhanh
                 </a>
             </div>
         </div>
